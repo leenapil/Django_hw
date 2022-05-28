@@ -1,0 +1,174 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이나현 시간표</title>
+    <link rel="stylesheet" href="{% static 'css/class.css' %}">
+</head>
+{% endblock %}
+{% block footer %}
+<body>
+    <h1>시간표 - 202214036 이나현</h1>
+    <table border="3" width="600" height="700">
+        <tr>
+            <th class="jb-th-1">&nbsp;</th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+       </tr>
+       <tr>
+           <td rowspan="2" class="time">9시</td>
+           <td class="sel-line">&nbsp;</td>
+           <td>&nbsp;</td>
+           <td rowspan="4" class="style0">
+               <p class="subject-name">말과글</p>
+               <p class="sub-info">이봉범<br>9:00~10:50<br>M407</p>
+           </td>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+       </tr>
+       <tr>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+       </tr>
+       <tr>
+           <td rowspan="2" class="time">10시</td>
+           <td rowspan="2" class="style1">
+               <p class="subject-name">비아메디아 채플 - 성공회이야기</p>
+               <p class="sub-info">노철래<br>10:00~10:50<br>G7309</p>
+           </td>
+           <td class="sel-line">&nbsp;</td>
+           <td>&nbsp;</td>
+       <td rowspan="4" class="style2">
+           <p class="subject-name">대학생활 세미나1</p>
+           <p class="sub-info">이하규<br>10:00~11:50<br>F6404</p></td>
+       </tr>
+       <tr>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+       </tr>
+       <tr>
+           <td rowspan="2" class="time">11시</td>
+           <td class="sel-line">&nbsp;</td>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+       </tr>
+       <tr>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+       </tr>
+       <tr>
+        <td rowspan="2" class="time">12시</td>
+        <td class="sel-line">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td rowspan="6" class="style3">
+            <p class="subject-name">노래로 보는 한국사회</p>
+            <p class="sub-info">이기형<br>12:00~14:50<br>F6110</p>
+        </td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+       </tr>
+       <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+       </tr>
+       <tr>
+           <td rowspan="2" class="time">1시</td>
+           <td class="sel-line">&nbsp;</td>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+           <td>&nbsp;</td>
+       </tr>
+       <tr>
+        <td class="sel-line">&nbsp;</td>
+        <td rowspan="3" class="style4">
+            <p class="subject-name">세계노동운동의 역사와 이론</p>
+            <p class="sub-info">배성인<br>13:30~14:45<br>G7308</p>
+        </td>
+        <td rowspan="3" class="style4">
+            <p class="subject-name">세계노동운동의 역사와 이론</p>
+            <p class="sub-info">배성인<br>13:30~14:45<br>G7308</p>
+        </td>
+       </tr>
+       <tr>
+        <td rowspan="2" class="time">2시</td>
+        <td class="sel-line">&nbsp;</td>
+        <td>&nbsp;</td>
+       </tr>
+       <tr>
+        <td class="sel-line">&nbsp;</td>
+        <td>&nbsp;</td>
+       </tr>
+       <tr>
+        <td rowspan="2" class="time">3시</td>
+        <td class="sel-line">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td rowspan="6" class="style5">
+            <p class="subject-name">대중음악의 이해</p>
+            <p class="sub-info">이준희<br>15:00~17:50<br>M205</p>
+        </td>
+        <td rowspan="4" class="style6">
+            <p class="subject-name">데이터 활용 및 분석</p>
+            <p class="sub-info">이해신<br>15:00~16:50<br>C3302</p>
+        </td>
+       </tr>
+       <tr>
+        <td class="sel-line">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+       </tr>
+       <tr>
+        <td rowspan="2" class="time">4시</td>
+        <td class="sel-line">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+       </tr>
+       <tr>
+        <td rowspan="5" class="style7">
+            <p class="subject-name">Python 프로그래밍</p>
+            <p class="sub-info">이상윤<br>16:30~17:45<br>F6206</p>
+        </td>
+        <td class="sel-line">&nbsp;</td>
+        <td rowspan="5" class="style7">
+            <p class="subject-name">Python 프로그래밍</p>
+            <p class="sub-info">이상윤<br>16:30~17:45<br>F6206</p>
+        </td>
+       </tr>
+       <tr>
+        <td rowspan="2" class="time">5시</td>
+        <td class="sel-line">&nbsp;</td> 
+       </tr>
+       <tr>
+        <td class="sel-line">&nbsp;</td>
+        <td>&nbsp;</td>
+       </tr>
+       <tr>
+        <td rowspan="2" class="time">6시</td>
+        <td class="sel-line">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+       </tr>
+       <tr>
+        <td class="sel-line">&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+       </tr>
+
+</body>
+</html>
+{% endblock %}

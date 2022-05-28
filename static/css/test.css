@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'ACCchildrenheartOTF-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2112-2@1.0/ACCchildrenheartOTF-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body{
+    font-family: 'ACCchildrenheartOTF-Regular';
+    background-image: url(https://file.mk.co.kr/meet/neds/2018/04/image_readtop_2018_265364_15247057823291378.jpeg);
+    background-size: cover;
+    height: 100vh;
+}
+
+article{
+    padding: 50px;
+    margin: 20px;
+}
+
+table{
+    padding: 50px auto;
+    margin: 20px auto;
+}
+
+h1{
+    font-size: 45px;
+    color: red;
+}
+
+h2{
+    font-size: 35px;
+    color: orange;
+}
+
+h1,h2{
+    text-align: center;
+}
+
+blokquote, footer{
+    font-size: 20px;
+    text-align: center;
+}

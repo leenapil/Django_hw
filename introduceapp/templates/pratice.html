@@ -1,0 +1,112 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charest="utf-8">
+        <link rel="stylesheet" type="text/css" href="{% static 'css/test.css' %}">
+        <title></title>
+    </head>
+{% endblock %}
+{% block footer %}
+    <body>
+        <header>
+            <h1>이나현의 홈페이지</h1>
+            <h2>이 곳은 저를 소개하는 페이지입니다.</h2>
+        </header>
+
+        <nav>
+            <h2>소개 순서</h2>
+            <ol>
+                <li>일기장(form실습)</li>
+                <li>
+                    소속(링크 및 이미지 실습)
+                    <ul>
+                        <li>성공회대학교</li>
+                        <li>IT융합자율학부</li>
+                    </ul>
+                </li>
+                <li>이력(테이블 실습)</li>
+                <li>좋아하는 것(텍스트 태그 소개)</li>
+            </ol>
+        </nav>
+
+        <section>
+            <article>
+                <form action="전송받을 대상">
+                    아이디 : <input type = "text" name="myid">
+                    비밀번호 : <input type = "password" name="mypw">
+                </form>
+                <form action="일기장">
+                    <h2>일기장</h2>
+                    제목 : <input type="text" name="diaryTitle">
+                    <select>
+                        <option value="goodDay"> 좋은날 </option>
+                        <option value="sosoDay"> 그저그런날 </option>
+                        <option value="sadDay"> 슬픈날 </option>
+                    </select>
+                    <br>
+                    <h3>내용 : </h3>
+                    <textarea cols="30" rows="20"></textarea>
+                    </br>
+                    <input type="submit">
+                </form>
+            </article>
+            <article>
+                <h2>저의 소속입니다</h2>
+                <a href="{% url 'school' %}">소속 확인하기</a>
+            </article>
+            <br>
+            <article>
+                <h2>저의 이력입니다</h2>
+                <table>
+                    <thead>
+                        <th>년도</th>
+                        <th>이력 내용</th>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2022년도</td>
+                            <td>성공회대학교 멋쟁이 사자처럼 10기 아기사자</td>
+                        </tr>
+                        <tr>
+                            <td>2022년도</td>
+                            <td>성공회대학교 IT융합자율학과 샌액긔</td>
+                        </tr>
+                        <tr>
+                            <td>2022년도</td>
+                            <td>이제 성인이다</td>
+                        </tr>
+                    </tbody>
+                    </tbody>
+                </table>
+            </article>
+
+            <br>
+
+            <article>
+                <h2>좋아하는 것</h2>
+                <p>
+                    <b>떡볶이</b>
+                    <b>초코크림가득들어간개ㅐㅐㅐ맛있는빵</b>
+                    <b>버드와이저</b>
+                </p>
+                <blockquote>
+                    <q>늦었다고 생각했을 땐 진짜 늦은 거다</q>
+                    <i>박명수, 무한도전 중</i>
+                </blockquote>
+            </article>
+
+        </section>
+
+        <br>
+        <hr>
+
+        <footer>
+            Copyright &copy; 성공회대학교 멋쟁이 사자처럼 10기
+        </footer>
+    </body>
+</html>
+{% endblock %}

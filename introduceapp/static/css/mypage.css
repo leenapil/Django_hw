@@ -1,0 +1,28 @@
+@font-face {
+    font-family: 'HS-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/HS-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+    font-family: 'HS-Regular';
+}
+.mypage-container {
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    gap: 10px;
+    text-align: center;
+}
+.style1 {
+    color:white;
+    font-size: 60px;
+}
+.style2 {
+    font-size: 30px;
+    text-align: center;
+}
+.style3 {
+    width: 100px;
+    height: 100px;
+}                                                                                                                                                                 
